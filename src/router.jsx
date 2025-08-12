@@ -7,7 +7,7 @@ import AddBook from "./pages/AddBook";
 import EditBook from "./pages/EditBook";
 import SingleBookPage from "./pages/SingleBookPage";
 import Layout from "./Layout";
-const apiBase = "https://bookstore-frontend-murex-mu.vercel.app"
+const apiBase = "https://bookstore-backend-hm71.onrender.com/"
 
 const router = createBrowserRouter([
   {
