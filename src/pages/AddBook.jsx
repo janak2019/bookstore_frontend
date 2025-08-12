@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import Navbar from "../component/navbar/Navbar";
+
 
 export default function BookForm({ onSuccess, apiBase }) {
   const [form, setForm] = useState({
@@ -23,43 +23,42 @@ export default function BookForm({ onSuccess, apiBase }) {
     }
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!form.bookName || !form.bookPrice) {
-      alert("Book name and price are required");
-      return;
-    }
-    const formData = new FormData();
-    formData.append("bookName", form.bookName);
-    formData.append("bookPrice", form.bookPrice);
-    formData.append("isbnNumber", form.isbnNumber);
-    formData.append("authorName", form.authorName);
-    formData.append("publishedAt", form.publishedAt);
-    formData.append("publication", form.publication);
-    if (form.image) formData.append("image", form.image);
+ const handleSubmit = async (e) => {
+  e.preventDefault();
+  if (!form.bookName || !form.bookPrice) {
+    alert("Book name and price are required");
+    return;
+  }
 
-    setLoading(true);
-    try {
-      await axios.post(`${apiBase}/book`, formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      });
-      alert("Book added!");
-      setForm({
-        bookName: "",
-        bookPrice: "",
-        isbnNumber: "",
-        authorName: "",
-        publishedAt: "",
-        publication: "",
-        image: null,
-      });
-      
-    } catch (err) {
-      alert("Failed to add book");
-    } finally {
-      setLoading(false);
+  const formData = new FormData();
+  formData.append("bookName", form.bookName);
+  formData.append("bookPrice", form.bookPrice);
+  formData.append("isbnNumber", form.isbnNumber);
+  formData.append("authorName", form.authorName);
+  formData.append("publishedAt", form.publishedAt);
+  formData.append("publication", form.publication);
+  if (form.image) formData.append("image", form.image);
+
+  setLoading(true);
+  try {
+    const response = await axios.post(`${apiBase}/book`, formData, {
+      headers: { "Content-Type": "multipart/form-data" },
+    });
+
+    const bookId = response.data.bookId;
+
+    if (bookId) {
+      navigate(`/book/${bookId}`);
+    } else {
+      alert("Book added, but ID not returned.");
     }
-  };
+
+  } catch (err) {
+    alert("Failed to add book");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <>
