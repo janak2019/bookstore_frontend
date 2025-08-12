@@ -37,7 +37,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="text-center py-4 border-t border-gray-200 dark:border-gray-700 text-sm">
-        &copy; {new Date().getFullYear()} BookStore. All rights reserved.
+        &copy; {new Date().getFullYear()} डिजिटल पुस्तकालय
       </div>
     </footer>
   );
