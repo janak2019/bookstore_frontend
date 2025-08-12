@@ -6,12 +6,6 @@ export default defineConfig({
   plugins: [react()],
   server:{
     host:true,
-    proxy: {
-      '/book': {
-        target: 'https://bookstore-frontend-murex-mu.vercel.app',
-        changeOrigin: true,
-        secure: false
-      }
-    }
+    
   }
 })
