@@ -7,26 +7,25 @@ const Footer = () => {
       <div className="max-w-screen-xl mx-auto px-4 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo/Info */}
         <div>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">📚 BookStore</h2>
+          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">📚 डिजिटल पुस्तकालय</h2>
           <p className="text-sm">
-            Your digital library for discovering, reading, and managing your favorite books.
+            आफ्नो मनपर्ने पुस्तकहरू खोज्ने, पढ्ने, र व्यवस्थापन गर्ने लागि तपाईंको डिजिटल पुस्तकालय।
           </p>
         </div>
 
         {/* Navigation */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <h3 className="text-lg font-semibold mb-4"> लिंकहरु</h3>
           <ul className="space-y-2">
-            <li><a href="/" className="hover:text-blue-500">Home</a></li>
-            <li><a href="/book-list" className="hover:text-blue-500">Books</a></li>
-            <li><a href="#" className="hover:text-blue-500">Services</a></li>
-            <li><a href="#" className="hover:text-blue-500">Contact</a></li>
+            <li><a href="/" className="hover:text-blue-500">गृहपृष्ठ</a></li>
+            <li><a href="/book-list" className="hover:text-blue-500">किताबहरु</a></li>
+            <li><a href="#" className="hover:text-blue-500">सम्पर्क</a></li>
           </ul>
         </div>
 
         {/* Socials */}
         <div>
-          <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
+          <h3 className="text-lg font-semibold mb-4">हामिलाई पछ्याउनुहोस</h3>
           <div className="flex space-x-4 text-xl">
             <a href="#"><FaFacebookF className="hover:text-blue-600" /></a>
             <a href="#"><FaTwitter className="hover:text-blue-400" /></a>
