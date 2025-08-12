@@ -1,6 +1,6 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
-import Layout from "/src/layout";
+
 import Home from "./pages/Home";
 import BookList from "./pages/BookList";
 import AddBook from "./pages/AddBook";
