@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
+
 
 
 export default function BookForm({ onSuccess, apiBase }) {
@@ -29,6 +31,7 @@ export default function BookForm({ onSuccess, apiBase }) {
     alert("Book name and price are required");
     return;
   }
+  const navigate = useNavigate();
 
   const formData = new FormData();
   formData.append("bookName", form.bookName);
