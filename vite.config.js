@@ -3,9 +3,10 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-   base: '/',
-  // ... other settings
+
+ 
   plugins: [react()],
+     base: '/',
   server:{
     host:true,
     
