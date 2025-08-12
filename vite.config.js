@@ -5,6 +5,12 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   plugins: [react()],
   server:{
-    host:true
+    host:true,
+    proxy: {
+      '/book': {
+        target: 'https://bookstore-frontend-murex-mu.vercel.app',
+        changeOrigin: true,
+        secure: false
+      }
   }
 })
