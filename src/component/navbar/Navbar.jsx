@@ -24,7 +24,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex items-center space-x-3">
           <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Logo" />
-          <span className="text-2xl font-semibold dark:text-white">BookStore</span>
+          <span className="text-2xl font-semibold dark:text-white">पुस्तकालय</span>
         </Link>
 
         {/* Right Actions */}
@@ -43,7 +43,7 @@ export default function Navbar() {
             to="/add-book"
             className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
           >
-            Add Book
+            किताब थप्नुहोस
           </Link>
 
           {/* Mobile Hamburger */}
@@ -91,7 +91,7 @@ export default function Navbar() {
                 to="/"
                 className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
               >
-                Home
+                गृहपृषठ
               </Link>
             </li>
             <li>
@@ -99,23 +99,16 @@ export default function Navbar() {
                 to="/book-list"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
               >
-                Book List
+                किताब सूचि
               </Link>
             </li>
+            
             <li>
               <a
                 href="#"
                 className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
               >
-                Services
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500"
-              >
-                Contact
+                सम्पर्क
               </a>
             </li>
           </ul>

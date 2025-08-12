@@ -6,15 +6,15 @@ const Home = ({apibase}) => {
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white pt-20">
       {/* Hero Section */}
       <section className="text-center px-6 py-20 md:py-28 bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to BookStore 📚</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">हाम्रो पुस्तकालयमा तपाईलाई स्वागत छ । 📚</h1>
         <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8">
-          Discover, explore, and manage your favorite books all in one place.
+          
         </p>
         <Link
           to="/book-list"
           className="bg-white text-blue-700 hover:bg-gray-200 font-semibold py-3 px-6 rounded-md transition duration-300"
         >
-          Browse Books
+          किताब खोज्नुहोस ।
         </Link>
       </section>
 
