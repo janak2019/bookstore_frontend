@@ -116,6 +116,7 @@ export default function BookForm({ onSuccess, apiBase }) {
             onChange={handleChange}
             placeholder="ISBN Number"
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+             required
           />
         </div>
 
@@ -130,6 +131,7 @@ export default function BookForm({ onSuccess, apiBase }) {
             onChange={handleChange}
             placeholder="Author's full name"
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+             required
           />
         </div>
 
@@ -144,6 +146,7 @@ export default function BookForm({ onSuccess, apiBase }) {
             value={form.publishedAt}
             onChange={handleChange}
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+             required
           />
         </div>
 
@@ -158,6 +161,7 @@ export default function BookForm({ onSuccess, apiBase }) {
             onChange={handleChange}
             placeholder="Publisher name"
             className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-400"
+             required
           />
         </div>
 
