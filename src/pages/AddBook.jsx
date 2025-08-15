@@ -48,13 +48,7 @@ export default function BookForm({ onSuccess, apiBase }) {
       headers: { "Content-Type": "multipart/form-data" },
     });
 
-    const bookId = response.data.bookId;
-
-    if (bookId) {
-      navigate(`/book/${bookId}`);
-    } else {
-      alert("Book added, but ID not returned.");
-    }
+  
 
   } catch (err) {
     alert("Failed to add book");
