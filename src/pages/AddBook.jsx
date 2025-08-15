@@ -108,7 +108,7 @@ export default function BookForm({ onSuccess, apiBase }) {
         {/* ISBN Number */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            ISBN Number
+            ISBN Number *
           </label>
           <input
             name="isbnNumber"
@@ -123,7 +123,7 @@ export default function BookForm({ onSuccess, apiBase }) {
         {/* Author Name */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Author Name
+            Author Name *
           </label>
           <input
             name="authorName"
@@ -138,7 +138,7 @@ export default function BookForm({ onSuccess, apiBase }) {
         {/* Published At */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Published At
+            Published At *
           </label>
           <input
             name="publishedAt"
@@ -153,7 +153,7 @@ export default function BookForm({ onSuccess, apiBase }) {
         {/* Publication */}
         <div>
           <label className="block text-gray-700 font-medium mb-1">
-            Publication
+            Publication *
           </label>
           <input
             name="publication"
