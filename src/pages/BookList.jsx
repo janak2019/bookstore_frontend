@@ -87,7 +87,7 @@ const BookList = ({ apiBase }) => {
       <div className="max-w-5xl mx-auto mt-20 mb-5 p-4 bg-white rounded shadow">
         {/* ... Filter UI from above goes here ... */}
 
-        <h2 className="text-xl font-semibold mb-4 text-gray-800">Filter & Search Books</h2>
+        <h2 className="text-xl font-semibold mb-4 text-gray-800">फिल्टर/सर्च</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
 
           {/* Search by name or ISBN */}
